@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Reach Us</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Kreon&family=El+Messiri&family=Fira+Sans+Condensed&family=Open+Sans+Condensed:wght@300;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        .fa {
+            display: inline-block;
+            padding: 50px;
+            font-size: 40px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: auto;
+        }
+
+        .fa-google:hover {
+            color: #d3cfce;
+        }
+
+        .fa-linkedin:hover {
+            color: #d3cfce;
+        }
+
+        .fa-google {
+            padding-left: 20px;
+            color: white;
+            width: 0;
+        }
+
+        .fa-linkedin {
+            color: white;
+            width: 0;
+        }
+
+
+        .bod {
+            background-color: rgb(186, 247, 108);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head1 {
+            font-size: 50px;
+            margin-top: 0px;
+            margin-left: 40px;
+            margin-right: auto;
+            padding-top: 24px;
+            padding-left: 4px;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+        .head1:hover {
+            color: rgb(238, 158, 158);
+        }
+
+        .head2 {
+            font-family: 'Fira Sans Condensed', sans-serif;
+            color: rgb(145, 148, 151);
+            text-align: center;
+            font-size: 480%;
+            margin-top: 100px;
+        }
+
+        .form {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+
+            color: rgb(231, 162, 33);
+            text-align: center;
+            font-weight: 600;
+            font-size: xx-large;
+            font-family: 'Open Sans Condensed', sans-serif;
+            margin-top: 100px;
+        }
+
+        .type2 {
+
+            width: 150px;
+            height: 30px;
+            margin: 0 38px 0 20px;
+            border: 3px solid rgb(238, 158, 158);
+            border-radius: 8px;
+
+        }
+
+        .type1 {
+            width: 150px;
+            height: 30px;
+            margin: 0 24px 0 20px;
+            border: 3px solid rgb(238, 158, 158);
+            border-radius: 8px;
+
+        }
+
+
+
+        textarea {
+            border: 3px solid rgb(238, 158, 158);
+            border-radius: 8px;
+            resize: none;
+            margin: 10px 64px 0 20px;
+        }
+
+
+
+        .sub {
+
+            font-size: large;
+            font-family: 'Fira Sans Condensed', sans-serif;
+            background-color: #074279;
+            border-radius: 5px;
+            border: none;
+            padding: 10px 20px;
+            color: #FFF;
+            margin-bottom: 150px;
+            margin-top: 30px;
+
+
+
+        }
+
+        .sub:hover {
+            background-color: #51c7e7
+        }
+
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+        }
+
+        .footer {
+            background-color: rgb(148, 144, 144);
+            text-align: center;
+
+
+        }
+
+        @media(min-width:800px) {
+            .fa-google {
+                margin: 40px auto;
+                padding: 10px 50px 10px 10px;
+                width: 0;
+            }
+
+            .fa-linkedin {
+                margin: 40px auto 40px 200px;
+                padding: 10px 50px 10px 10px;
+                width: 0;
+            }
+
+            .span1 {
+                padding-top: 32px;
+                padding-left: 8px;
+            }
+
+        }
+
+        @media(max-width:480px) {
+            .head1 {
+                font-size: 40px;
+                margin-left: 18px;
+            }
+
+            .head2{
+                
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            .span1 {
+                padding-top: 30px;
+                
+            }
+
+            textarea {
+                margin: 10px;
+            }
+
+            .type1 {
+                margin: 10px;
+            }
+
+            .type2 {
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="bod">
+        <a class="head1" href="file:///C:/Users/VARUN%20M%20KUMAWAT/Desktop/tryHtml/index.html">
+            <span class="span1" style="display: inline-block; ">
+                fLUCK
+            </span>
+        </a>
+
+        <h1 class="head2">
+            Hey, PING us!
+        </h1>
+
+        <form class="form" action="mailto:varunkumawatleap2@gmail.com" method="post" enctype="text/plain">
+            YOUR NAME: <input class="type1" type="text" name="Name">
+            <br><br>
+            YOUR E-MAIL: <input class="type2" type="email" name="Email">
+            <br><br>
+            TYPE SOMETHING: <textarea maxlength="200" rows="3" cols="20" name="Message"></textarea>
+            <br><br>
+            <input class="sub" type="submit" value="SUBMIT">
+        </form>
+
+    </div>
+
+    <!-- FOOTER STARTING -->
+
+    <div class="footer" id="foot">
+        <a href="mailto:varunkumawatleap2@gmail.com" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/in/varun-kumawat-0a6b3a228" class="fa fa-linkedin" target="_blank"></a>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
