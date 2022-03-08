@@ -249,23 +249,52 @@
         textarea:focus {
             outline: none;
         }
+        
+        
 
-        .sub {
-
-            font-size: large;
-            font-family: 'Fira Sans Condensed', sans-serif;
-            background-color: #074279;
-            border-radius: 5px;
-            border: none;
-            padding: 10px 20px;
-            color: #FFF;
-            margin-bottom: 150px;
+        .button-52 {
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            padding: 13px 20px 13px;
+            outline: 0;
+            border: 1px solid black;
+            cursor: pointer;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            margin-bottom: 60px;
             margin-top: 30px;
         }
 
-        .sub:hover {
-            background-color: #51c7e7
+        .button-52:after {
+            content: "";
+            /* background-color: #a2caf0; */
+            background-image: linear-gradient(to bottom right, #42a0f8, rgb(235, 240, 173));
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            top: 7px;
+            left: 7px;
+            transition: 0.2s;
         }
+
+        .button-52:hover:after {
+            top: 0px;
+            left: 0px;
+        }
+
+        @media (min-width: 768px) {
+            .button-52 {
+                padding: 13px 50px 13px;
+
+            }
+        }
+        
+        
 
         textarea {
             border: 3px solid rgb(192, 240, 36);
@@ -588,7 +617,7 @@
             <br><br>
             TYPE SOMETHING: <br><br><textarea maxlength="200" rows="3" cols="20" name="Message"></textarea>
             <br><br>
-            <input class="sub" type="submit" value="SUBMIT">
+            <button class="button-52" role="button" type="submit">SUBMIT</button>
         </form>
 
     </div>
