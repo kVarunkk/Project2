@@ -449,13 +449,26 @@
         .show {
             background: linear-gradient(#fcebeb, #d5d7f1) !important;
         }
-
+        
+        .nav-link{
+            padding: 8px;
+        }
 
 
 
 
         /* FOR SCREENS> 800px */
         @media(min-width:800px) {
+            
+             .scrolled .nav-link {
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+             .scrolled .navbar-brand{
+                padding-top: 0;
+                padding-bottom: 0;
+            }
 
             .navbar-brand {
                 font-size: 45px;
@@ -528,9 +541,7 @@
 
 
 
-            .scrolled .show {
-                background: none;
-            }
+            
 
             .neonText {
                 font-size: 50px !important;
@@ -538,26 +549,21 @@
 
             .navbar-brand {
                 font-size: 30px;
-                margin-left: 10px;
-                padding-top: 5px;
+                margin-left: 6px;
+                
             }
 
             .nav-link {
                 color: rgb(0, 0, 0) !important;
+                padding-bottom: 4px;
+                padding-top: 4px;
             }
 
             .div1 {
-                height: 770px;
+                height: 780px;
             }
 
-            .onlyMob {
-                margin: 0px auto;
-                padding: 0px;
-                border-top: 4px solid rgb(255, 255, 255) !important;
-                width: 50%;
-
-                border: none;
-            }
+            
 
             .image {
                 margin-left: 50px;
@@ -640,11 +646,11 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
 
-                        <a class="nav-link" id="nav-b" style="color: aliceblue; padding:8px ;" href="#divE2">Know us</a>
-                        <hr class="onlyMob" style="height: 4px;">
-                        <a class="nav-link" id="nav-b" style="color: aliceblue; padding:8px ;" href="#divE3">About</a>
-                        <hr class="onlyMob" style="height: 4px;">
-                        <a class="nav-link" id="nav-b" style="color: aliceblue; padding:8px ;" href="#div4">Reach us</a>
+                        <a class="nav-link" id="nav-b" style="color: aliceblue; " href="#divE2">Know us</a>
+                        
+                        <a class="nav-link" id="nav-b" style="color: aliceblue; " href="#divE3">About</a>
+                        
+                        <a class="nav-link" id="nav-b" style="color: aliceblue; " href="#div4">Reach us</a>
                     </div>
                 </div>
             </div>
