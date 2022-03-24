@@ -26,6 +26,11 @@ outline: 1px solid #f00 !important;
 
 
 
+
+
+
+
+
         /* PRELOADER START  */
 
         .wrapper {
@@ -173,7 +178,9 @@ outline: 1px solid #f00 !important;
             margin-right: 10px;
         }
 
-
+        #times {
+            display: none;
+        }
 
 
         .navbar.scrolled {
@@ -199,7 +206,7 @@ outline: 1px solid #f00 !important;
 
 
 
-        @media(min-width:800px) {
+        @media(min-width:768px) {
 
             li {
                 margin-left: 10px;
@@ -238,24 +245,34 @@ outline: 1px solid #f00 !important;
                 margin-bottom: 5px;
             }
 
-            .link1{
+            .link1 {
                 display: none;
             }
 
             .link {
-                
+
                 margin-right: 0px;
                 margin-left: 290px;
                 margin-top: 20px;
                 /* background-image: linear-gradient(to right,rgb(232, 232, 255),whitesmoke); */
-                background-color: rgba(255,255,255,0.5);
-                backdrop-filter: blur(5px);
+                background-color: rgb(207, 206, 206);
+
                 position: relative;
                 z-index: 4;
                 box-shadow: 0 3px 17px 5px rgba(64, 65, 68, 0.2);
                 border-radius: 10px;
                 padding: 5px;
 
+            }
+
+
+
+            @supports(backdrop-filter: blur(5px)) {
+                .link {
+                    background: rgba(167, 175, 171, 0.5);
+                    backdrop-filter: blur(5px);
+
+                }
             }
 
             hr {
@@ -268,6 +285,69 @@ outline: 1px solid #f00 !important;
 
             #new {
                 color: rgb(22, 22, 22);
+            }
+
+
+
+
+
+
+            .menu-btn {
+                /* position: relative; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                height: 25px;
+                float: right;
+                margin: 8px 10px 8px 8px;
+
+                transition: all .5s ease-in-out;
+
+            }
+
+
+            .menu-btn__burger {
+                width: 22px;
+                height: 3px;
+                background: rgb(145, 148, 151);
+                border-radius: 5px;
+
+                transition: all .5s ease-in-out;
+            }
+
+            .menu-btn__burger::before,
+            .menu-btn__burger::after {
+                content: '';
+                position: absolute;
+                width: 22px;
+                height: 3px;
+                background: rgb(145, 148, 151);
+                border-radius: 5px;
+
+                transition: all .5s ease-in-out;
+            }
+
+            .menu-btn__burger::before {
+                transform: translateY(-6px);
+            }
+
+            .menu-btn__burger::after {
+                transform: translateY(6px);
+            }
+
+            .menu-btn.open .menu-btn__burger {
+                transform: translateX(-50px);
+                background: transparent;
+                box-shadow: none;
+            }
+
+            .menu-btn.open .menu-btn__burger::before {
+                transform: rotate(45deg) translate(35px, -35px);
+            }
+
+            .menu-btn.open .menu-btn__burger::after {
+                transform: rotate(-45deg) translate(35px, 35px);
             }
 
 
@@ -325,7 +405,7 @@ outline: 1px solid #f00 !important;
 
 
 
-        p{
+        p {
             color: #595a5a;
         }
 
@@ -542,7 +622,7 @@ outline: 1px solid #f00 !important;
 
 
 
-        @media(min-width:800px) {
+        @media(min-width:768px) {
 
             .text {
 
@@ -676,9 +756,17 @@ outline: 1px solid #f00 !important;
 
 
 
-            <div class="button" id="button" style="font-size: 20px; color: rgb(145, 148, 151);">
-                <i class="fa fa-bars" style="padding: 0;font-size: 25px;"></i>
+            <!-- <div class="button btn1" id="button1"  style="font-size: 20px; color: rgb(145, 148, 151); "> 
+<i class="fa fa-bars" id="bars" style="padding: 0;font-size: 25px;"></i>
+<i class="fa fa-times" id="times" style="padding: 0;font-size: 25px;"></i>
+
+</div>-->
+
+            <div class="menu-btn" id="button1">
+                <div class="menu-btn__burger"></div>
             </div>
+
+
 
 
             <nav>
@@ -695,11 +783,11 @@ outline: 1px solid #f00 !important;
                         </li>
                         <hr>
                         <li>
-                            <a id="new" href="#divE3">About</a>
+                            <a id="new" href="#hrhr1">About</a>
                         </li>
                         <hr>
                         <li>
-                            <a id="new" href="#div4">Reach us</a>
+                            <a id="new" href="#hrhr2">Reach us</a>
                         </li>
                     </ul>
                 </div>
@@ -712,11 +800,11 @@ outline: 1px solid #f00 !important;
                         </li>
                         <hr>
                         <li>
-                            <a id="new" href="#divE3">About</a>
+                            <a id="new" href="#hrhr1">About</a>
                         </li>
                         <hr>
                         <li>
-                            <a id="new" href="#div4">Reach us</a>
+                            <a id="new" href="#hrhr2">Reach us</a>
                         </li>
                     </ul>
                 </div>
@@ -795,7 +883,7 @@ outline: 1px solid #f00 !important;
 
 
 
-    <hr class="hr1">
+    <hr class="hr1" id="hrhr1">
 
     <!-- DIV 3 STARTING -->
 
@@ -840,7 +928,7 @@ outline: 1px solid #f00 !important;
 
     </div>
 
-    <hr class="hr1">
+    <hr class="hr1" id="hrhr2">
 
 
     <!-- DIV 4 STARTING -->
@@ -857,7 +945,7 @@ outline: 1px solid #f00 !important;
             TYPE SOMETHING: <br><br><textarea maxlength="500" rows="4" cols="20" name="Message"></textarea>
             <br><br>
             <input class="sub" type="submit" value="SUBMIT">
-            <!-- <button class="button-52" role="button" type="submit">SUBMIT</button> -->
+
         </form>
 
     </div>
@@ -926,33 +1014,37 @@ outline: 1px solid #f00 !important;
 
 
     <script>
-        var button = document.getElementById('button');
+        var button = document.getElementById('button1');
+
 
         button.onclick = function () {
             var div = document.getElementById('linkl');
-            if (div.style.display !== 'none' && div.style.display !== 'inline-block') {
+            if (div.style.display === 'none') {
                 div.style.display = 'inline-block';
             }
-            if (div.style.display === 'inline-block') {
+
+            else if (div.style.display === 'inline-block') {
                 div.style.display = 'none';
             }
-            else if (div.style.display === 'none') {
-                div.style.display = 'inline-block';
-            }
         };
+
     </script>
+
 
     <script>
-        var bod = document.getElementsByName('body');
-
-        bod.onclick = function() {
-            var div = document.getElementById('linkl');
-
-            if(div.style.display === 'inline-block'){
-                div.style.display = 'none';
+        const menuBtn = document.querySelector('.menu-btn');
+        let menuOpen = false;
+        menuBtn.addEventListener('click', () => {
+            if (!menuOpen) {
+                menuBtn.classList.add('open');
+                menuOpen = true;
+            } else {
+                menuBtn.classList.remove('open');
+                menuOpen = false;
             }
-        };
+        });
     </script>
+
 
 
 
@@ -964,6 +1056,8 @@ outline: 1px solid #f00 !important;
             var divi = document.getElementById('linkl');
             if (divi.style.display === 'inline-block') {
                 divi.style.display = 'none';
+                document.querySelector('.menu-btn').classList.remove('open');
+                menuOpen = false;
             }
         };
 
