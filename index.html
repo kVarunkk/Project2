@@ -1013,21 +1013,19 @@ outline: 1px solid #f00 !important;
     </script>
 
 
+    
     <script>
-        var button = document.getElementById('button1');
+        $(".menu-btn").click(function(){
+            $(".link").slideToggle();
+        });
+    </script>
 
-
-        button.onclick = function () {
-            var div = document.getElementById('linkl');
-            if (div.style.display === 'none') {
-                div.style.display = 'inline-block';
-            }
-
-            else if (div.style.display === 'inline-block') {
-                div.style.display = 'none';
-            }
-        };
-
+    <script>
+        $(".link").click(function(){
+            $(".link").slideToggle();
+            $(".menu-btn").removeClass("open");
+            menuOpen = false;
+        });
     </script>
 
 
@@ -1048,20 +1046,6 @@ outline: 1px solid #f00 !important;
 
 
 
-    <script>
-
-        var aa = document.getElementById('linkl');
-
-        aa.onclick = function () {
-            var divi = document.getElementById('linkl');
-            if (divi.style.display === 'inline-block') {
-                divi.style.display = 'none';
-                document.querySelector('.menu-btn').classList.remove('open');
-                menuOpen = false;
-            }
-        };
-
-    </script>
 
 
 
