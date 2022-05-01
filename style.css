@@ -266,7 +266,7 @@ a:hover {
     .link1 {
         display: inline-block;
         margin-top: 6px;
-        margin-left: 475px;
+        margin-left: 35%;
     }
 
     .link1 hr {
@@ -677,7 +677,7 @@ textarea {
 
 /* GENERAL MEDIA QUERIES */
 
-@media(min-width:768px) {
+@media screen and (min-width:768px) and (max-width:1024px){
 
     .text {
 
@@ -736,6 +736,71 @@ textarea {
         margin: 40px auto 40px 200px;
         padding: 10px 10px 10px 10px;
     }
+}
+
+
+@media(min-width:1025px){
+         .div1{
+         height : 921px
+         }
+
+           .text {
+
+        margin-left: 100px !important;
+        margin-right: 100px !important;
+        padding-left: 50px;
+        padding-right: 50px;
+
+    }
+
+    .new1 {
+        padding-top: 250px;
+    }
+
+    
+
+
+
+    .span1 {
+        font-size: 110px;
+    }
+
+
+
+    .img1 {
+        margin-left: -45px;
+        margin-right: 150px;
+        margin-top: 7px;
+
+    }
+
+    .hed {
+        margin-left: 500px;
+        margin-right: 400px;
+        padding-bottom: 0px;
+    }
+
+    .div2 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .para {
+        margin-right: 200px;
+        margin-left: 440px;
+    }
+
+    .fa-google {
+        margin: 40px auto;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .fa-linkedin {
+        margin: 40px auto 40px 200px;
+        padding: 10px 10px 10px 10px;
+    }
+
+
 }
 
 @media(max-width:480px) {
