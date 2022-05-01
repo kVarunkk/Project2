@@ -164,7 +164,7 @@ nav {
     background: transparent;
     margin: 0;
     height: 45px;
-
+    text-align : center;
 }
 
 ul {
@@ -266,7 +266,7 @@ a:hover {
     .link1 {
         display: inline-block;
         margin-top: 6px;
-        margin-left: 35%;
+        
     }
 
     .link1 hr {
